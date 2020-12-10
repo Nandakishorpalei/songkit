@@ -26,7 +26,7 @@ for(i=0 ; i<number ; i++){
     case 2:
     document.querySelectorAll(".drum")[i].addEventListener("click",handler2);
     function handler2(){
-      var audio2=new Audio("Chahun_Main_ Ya_Naa.mp3");
+      var audio2=new Audio("Chahun_Main_Ya_Naa.mp3");
       audio2.play();
     }
     break;
