@@ -8,8 +8,8 @@ for(i=0 ; i<number ; i++){
     case 0:
     document.querySelectorAll(".drum")[i].addEventListener("click",handler0);
     function handler0(){
-      var audio1=new Audio("WAJAH_TUM_HO_.mp3");
-        audio1.play();
+      var audio0=new Audio("WAJAH_TUM_HO_.mp3");
+        audio0.play();
       }
 
 
