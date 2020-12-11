@@ -1,76 +1,162 @@
-var name=prompt("what's your Name ? ");
-alert("Hey " + name +" !! Welcome to the Songkit")
+var name= prompt("What Is Your Good Name ? ");
+var name1= name.slice(0,1).toUpperCase()+name.slice(1,name.length).toLowerCase();
+alert("Hey "+ name1 + " Great To see you 😇");
+
+// detecting button press
 
 var number=document.querySelectorAll(".drum").length;
 
-for(i=0 ; i<number ; i++){
-  switch (i){
-    case 0:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler0);
-    function handler0(){
-      var audio0=new Audio("WAJAH_TUM_HO_.mp3");
-        audio0.play();
-      }
+
+for(i=0 ; i<number ; i++)
+{
+  document.querySelectorAll(".drum")[i].addEventListener("click",function(){
+
+ var buttonInnerHTML = this.innerHTML;
+
+makesound(buttonInnerHTML);
+
+});
+
+}
 
 
+// detecting keyboard press
+
+document.addEventListener("keypress", function(event) {
+  makesound(event.key);
+});
+function makesound(key){
+  switch (key){
+    case "W":
+      var audio=new Audio("sounds/WAJAH_TUM_HO_.mp3");
+        audio.play();
     break;
 
-    case 1:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler1);
-    function handler1(){
-      var audio1=new Audio("Kabhi Aayine Pe.mp3");
+    case "K":
+
+      var audio1=new Audio("sounds/Kabhi Aayine Pe.mp3");
       audio1.play();
-    }
-    break;
+      break;
 
-    case 2:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler2);
-    function handler2(){
-      var audio2=new Audio("Chahun_Main_Ya_Naa.mp3");
+
+    case "C":
+
+      var audio2=new Audio("sounds/chahunmainyaana.mp3");
       audio2.play();
-    }
+
     break;
 
 
-    case 3:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler3);
-    function handler3(){
-      var audio3=new Audio("Downtown.m4a");
+    case "D":
+
+      var audio3=new Audio("sounds/Downtown.m4a");
       audio3.play();
-    }
     break;
 
 
-    case 4:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler4);
-    function handler4(){
-      var audio4=new Audio("Hai_Dil_Ye_Mera.mp3")
+    case "H":
+
+      var audio4=new Audio("sounds/Hai_Dil_Ye_Mera.mp3")
       audio4.play();
-    }
     break;
 
-    case 5:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler5);
-    function handler5(){
-      var audio5=new Audio("Jashn-E-Ishqa.mp3");
+    case "J":
+
+      var audio5=new Audio("sounds/Jashn-E-Ishqa.mp3");
       audio5.play();
-    }
     break;
 
+    case "T":
 
-
-
-
-    case 6:
-    document.querySelectorAll(".drum")[i].addEventListener("click",handler6);
-    function handler6(){
-      var audio6=new Audio("Tum Hi Ho_.mp3");
+      var audio6=new Audio("sounds/Tum Hi Ho_.mp3");
       audio6.play();
-    }
+
     break;
 
-    default :
-    document.write("wrong entry");
+    case "L" :
+    var audio14=new Audio("sounds/Laapata.mp3");
+    audio14.play();
+    break;
+
+    case "B":
+    var audio15=new Audio("sounds/BurjKhalifa.mp3");
+    audio15.play();
+    break;
+
+// key section
+
+    case "w":
+     alert(events + " have got clicked ")
+      var audio7=new Audio("sounds/WAJAH_TUM_HO_.mp3");
+        audio7.play();
+    break;
+
+    case "k":
+
+      var audio8=new Audio("sounds/Kabhi Aayine Pe.mp3");
+      audio8.play();
+      break;
+
+
+    case "c":
+
+      var audio9=new Audio("sounds/chahunmainyaana.mp3");
+      audio9.play();
+
+    break;
+
+
+    case "d":
+
+      var audio10=new Audio("sounds/Downtown.m4a");
+      audio10.play();
+    break;
+
+
+    case "h":
+
+      var audio11=new Audio("sounds/Hai_Dil_Ye_Mera.mp3")
+      audio11.play();
+    break;
+
+    case "j":
+
+      var audio12=new Audio("sounds/Jashn-E-Ishqa.mp3");
+      audio12.play();
+    break;
+
+
+
+
+
+    case "t":
+
+      var audio13=new Audio("sounds/Tum Hi Ho_.mp3");
+      audio13.play();
+
+    break;
+
+    case "l":
+    var audio16=new Audio("sounds/Laapata.mp3");
+    audio16.play();
+    break;
+
+    case "b":
+    var audio17=new Audio("sounds/BurjKhalifa.mp3");
+    audio17.play();
+    break;
+
+    case "N":
+
+
+    var audio15=new Audio("sounds/BurjKhalifa.mp3");
+
+
+    audio15.pause();
+
+    break;
+
+    default : document.write("wrong entry");
   }
 
 }
