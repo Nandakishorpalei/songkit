@@ -21,12 +21,12 @@ background-image: url("https://a10.gaanacdn.com/images/albums/86/1526786/crop_48
 background-size:cover;
 }
 
-.a {
+.k {
 background-image: url("https://d37atgyntjgeo4.cloudfront.net/images/detailed/31/Hate-Story-2-Kabhi-Aayine-Pe-Likha-Tujhe_gjcg-d6.jpg?t=1404988276");
 background-size: cover;
 }
 
-.s {
+.c {
 background-image: url("https://c.saavncdn.com/430/Aashiqui-2-Hindi-2013-500x500.jpg");
 background-size:cover;
 }
@@ -36,21 +36,30 @@ background-image: url("https://a10.gaanacdn.com/images/song/71/24344171/crop_480
 background-size:cover;
 }
 
-.j {
+.h {
 background-image: url("https://c-sf.smule.com/rs-s77/arr/46/03/ba7a6f26-5591-4fdb-8ba8-680c8d656500_1024.jpg");
 background-size: cover;
 }
 
-.k {
+.j {
 background-image: url("https://a10.gaanacdn.com/images/albums/94/228994/crop_480x480_228994.jpg");
 background-size: cover;
 }
 
-.l {
+.t {
 background-image: url("https://lh3.googleusercontent.com/-vqRXyU5HwYc/VTRutSdx5VI/AAAAAAAAACE/BOMQQWq24dQ/Tum-Hi-Ho-lyrics-from-Aashiqui-2.jpg");
 background-size: cover;
 }
 
+.b {
+  background-image: url("https://www.bollywoodbubble.com/wp-content/uploads/2020/10/Burj-Khalifa-Akshay-Kumar-Kiara-Advani-2-1280x720.jpg");
+  background-size: cover;
+}
+
+.l{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/lV3dJ5P5bR/size_xxl.webp");
+  background-size: cover;
+}
 .set {
   margin: 10% auto;
 }
@@ -94,4 +103,3 @@ background-size: cover;
 
   }
 }
-
