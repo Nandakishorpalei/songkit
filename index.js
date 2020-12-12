@@ -64,7 +64,7 @@ function makesound(key){
 
     case "J":
 
-      var audio5=new Audio("Jashn-E-Ishqa.mp3");
+      var audio5=new Audio("Jab_Koi_Baat.mp3");
       audio5.play();
     break;
 
@@ -123,7 +123,7 @@ function makesound(key){
 
     case "j":
 
-      var audio12=new Audio("Jashn-E-Ishqa.mp3");
+      var audio12=new Audio("Jab_Koi_Baat.mp3");
       audio12.play();
     break;
 
