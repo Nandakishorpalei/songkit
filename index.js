@@ -14,6 +14,7 @@ for(i=0 ; i<number ; i++)
  var buttonInnerHTML = this.innerHTML;
 
 makesound(buttonInnerHTML);
+  recentbutton(buttonInnerHTML);  
 
 });
 
@@ -24,6 +25,7 @@ makesound(buttonInnerHTML);
 
 document.addEventListener("keypress", function(event) {
   makesound(event.key);
+  recentbutton(event.key);
 });
 function makesound(key){
   switch (key){
@@ -47,16 +49,16 @@ function makesound(key){
     break;
 
 
-    case "D":
+    case "E":
 
-      var audio3=new Audio("Downtown.m4a");
+      var audio3=new Audio("Ek_Din_Teri_Raahon.mp3");
       audio3.play();
     break;
 
 
     case "H":
 
-      var audio4=new Audio("Hai_Dil_Ye_Mera.mp3")
+      var audio4=new Audio("Hale Dil.mp3")
       audio4.play();
     break;
 
@@ -106,16 +108,16 @@ function makesound(key){
     break;
 
 
-    case "d":
+    case "e":
 
-      var audio10=new Audio("Downtown.m4a");
+      var audio10=new Audio("Ek_Din_Teri_Raahon.mp3");
       audio10.play();
     break;
 
 
     case "h":
 
-      var audio11=new Audio("Hai_Dil_Ye_Mera.mp3")
+      var audio11=new Audio("Hale Dil.mp3")
       audio11.play();
     break;
 
@@ -160,3 +162,11 @@ function makesound(key){
   }
 
 }
+
+function recentbutton(activekey){
+   var activebutton=  document.querySelector("."+activekey);
+   activebutton.classList.add("pressed");
+   setTimeout(function() {
+     activebutton.classList.remove("pressed");
+   },100);
+ }
