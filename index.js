@@ -1,8 +1,37 @@
 var name= prompt("What Is Your Good Name ? ");
-var name1= name.slice(0,1).toUpperCase()+name.slice(1,name.length).toLowerCase();
-alert("Hey "+ name1 + " Great To see you 😇");
+ var name1= name.slice(0,1).toUpperCase()+name.slice(1,name.length).toLowerCase();
+ alert("Hey "+ name1 + " Great To see you 😇");
 
-// detecting button press
+// sounds
+var audio=new Audio("sounds/wajah.mp3");
+var audio1=new Audio("sounds/aayine.mp3");
+var audio2=new Audio("sounds/cmyn.mp3");
+var audio3=new Audio("sounds/ekdin.mp3");
+var audio4=new Audio("sounds/haledil.mp3");
+var audio5=new Audio("sounds/Butterfly.mp3");
+var audio6=new Audio("sounds/tumhiho.mp3");
+var audio14=new Audio("sounds/laapata.mp3");
+var audio15=new Audio("sounds/burj.mp3");
+var audio7=new Audio("sounds/wajah.mp3");
+var audio8=new Audio("sounds/aayine.mp3");
+var audio9=new Audio("sounds/cmyn.mp3");
+var audio10=new Audio("sounds/ekdin.mp3");
+var audio11=new Audio("sounds/haledil.mp3");
+var audio12=new Audio("sounds/Butterfly.mp3");
+var audio13=new Audio("sounds/tumhiho.mp3");
+var audio16=new Audio("sounds/laapata.mp3");
+var audio17=new Audio("sounds/burj.mp3");
+var audio15=new Audio("sounds/burj.mp3");
+
+var buttonw = document.querySelector(".wajah"),count = 1;
+var buttonk = document.querySelector(".kabhi"),count = 1;
+var buttonb = document.querySelector(".butterfly"),count = 1;
+var buttonc = document.querySelector(".cmyn"),count = 1;
+var buttone = document.querySelector(".ekdin"),count = 1;
+var buttonh = document.querySelector(".haledil"),count = 1;
+var buttonl = document.querySelector(".laapata"),count = 1;
+var buttonbu = document.querySelector(".burj"),count = 1;
+var buttont = document.querySelector(".tumhiho"),count = 1;
 
 var number=document.querySelectorAll(".drum").length;
 
@@ -10,12 +39,12 @@ var number=document.querySelectorAll(".drum").length;
 for(i=0 ; i<number ; i++)
 {
   document.querySelectorAll(".drum")[i].addEventListener("click",function(){
+// detecting button press
 
  var buttonInnerHTML = this.innerHTML;
 
 makesound(buttonInnerHTML);
-  recentbutton(buttonInnerHTML);  
-
+recentbutton(buttonInnerHTML);
 });
 
 }
@@ -27,82 +56,187 @@ document.addEventListener("keypress", function(event) {
   makesound(event.key);
   recentbutton(event.key);
 });
+
+
 function makesound(key){
   switch (key){
     case "W":
-      var audio=new Audio("WAJAH_TUM_HO_.mp3");
-        audio.play();
+
+    buttonw.onclick = function() {
+      count += 1;
+
+    if (count % 2 ==0){
+
+     audio.pause();
+    }
+    else{
+
+    audio.play();
+      }
+    };
+audio.play();
     break;
 
     case "K":
+    buttonk.onclick = function() {
+      count += 1;
 
-      var audio1=new Audio("Kabhi Aayine Pe.mp3");
+    if (count % 2 ==0){
+
+     audio1.pause();
+    }
+    else{
+
+    audio1.play();
+      }
+    };
+
       audio1.play();
       break;
 
 
     case "C":
+    buttonc.onclick = function() {
+      count += 1;
 
-      var audio2=new Audio("chahunmainyaana.mp3");
+    if (count % 2 ==0){
+
+     audio2.pause();
+    }
+    else{
+
+    audio2.play();
+      }
+    };
+
       audio2.play();
 
     break;
 
 
     case "E":
+    buttone.onclick = function() {
+      count += 1;
 
-      var audio3=new Audio("Ek_Din_Teri_Raahon.mp3");
+    if (count % 2 ==0){
+
+     audio3.pause();
+    }
+    else{
+
+    audio3.play();
+      }
+    };
+
       audio3.play();
     break;
 
 
     case "H":
+    buttonh.onclick = function() {
+      count += 1;
 
-      var audio4=new Audio("Hale Dil.mp3")
+    if (count % 2 ==0){
+
+     audio4.pause();
+    }
+    else{
+
+    audio4.play();
+      }
+    };
+
       audio4.play();
     break;
 
-    case "J":
 
-      var audio5=new Audio("Lehanga.mp3");
+    case "J":
+    buttonb.onclick = function() {
+      count += 1;
+
+    if (count % 2 ==0){
+
+     audio5.pause();
+    }
+    else{
+
+    audio5.play();
+      }
+    };
+
       audio5.play();
     break;
 
-    case "T":
 
-      var audio6=new Audio("Tum Hi Ho_.mp3");
+    case "T":
+    buttont.onclick = function() {
+      count += 1;
+
+    if (count % 2 ==0){
+
+     audio6.pause();
+    }
+    else{
+
+    audio6.play();
+      }
+    };
+
       audio6.play();
 
     break;
 
+
     case "L" :
-    var audio14=new Audio("Laapata.mp3");
+    buttonl.onclick = function() {
+      count += 1;
+
+    if (count % 2 ==0){
+
+     audio14.pause();
+    }
+    else{
+
+    audio14.play();
+      }
+    };
     audio14.play();
     break;
 
     case "B":
-    var audio15=new Audio("BurjKhalifa.mp3");
+    buttonbu.onclick = function() {
+      count += 1;
+
+    if (count % 2 ==0){
+
+     audio15.pause();
+    }
+    else{
+
+    audio15.play();
+      }
+    };
     audio15.play();
     break;
 
-// key section
+
 
     case "w":
-    
-      var audio7=new Audio("WAJAH_TUM_HO_.mp3");
+
+
         audio7.play();
     break;
 
     case "k":
 
-      var audio8=new Audio("Kabhi Aayine Pe.mp3");
+
       audio8.play();
       break;
 
 
     case "c":
 
-      var audio9=new Audio("chahunmainyaana.mp3");
+
       audio9.play();
 
     break;
@@ -110,55 +244,47 @@ function makesound(key){
 
     case "e":
 
-      var audio10=new Audio("Ek_Din_Teri_Raahon.mp3");
+
       audio10.play();
     break;
 
 
     case "h":
 
-      var audio11=new Audio("Hale Dil.mp3")
+
       audio11.play();
     break;
 
     case "j":
 
-      var audio12=new Audio("Lehanga.mp3");
+
       audio12.play();
     break;
 
-
-
-
-
     case "t":
 
-      var audio13=new Audio("Tum Hi Ho_.mp3");
+
       audio13.play();
 
     break;
 
     case "l":
-    var audio16=new Audio("Laapata.mp3");
+
     audio16.play();
     break;
 
     case "b":
-    var audio17=new Audio("BurjKhalifa.mp3");
+
     audio17.play();
     break;
 
     case "N":
 
-
-    var audio15=new Audio("BurjKhalifa.mp3");
-
-
     audio15.pause();
 
     break;
 
-    default : document.write("wrong entry");
+    default : alert("wrong entry");
   }
 
 }
