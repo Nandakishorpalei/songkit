@@ -4,6 +4,7 @@ body {
 }
 
 h1 {
+
   font-size: 5rem;
   color: #DBEDF3;
   font-family: "Arvo", "cursive";
@@ -17,47 +18,47 @@ footer {
   margin-top: -9.5rem;
 }
 
-.w {
+.wajah {
 background-image: url("https://a10.gaanacdn.com/images/albums/86/1526786/crop_480x480_1526786.jpg");
 background-size:cover;
 }
 
-.k {
+.kabhi {
 background-image: url("https://d37atgyntjgeo4.cloudfront.net/images/detailed/31/Hate-Story-2-Kabhi-Aayine-Pe-Likha-Tujhe_gjcg-d6.jpg?t=1404988276");
 background-size: cover;
 }
 
-.c {
+.cmyn {
 background-image: url("https://c.saavncdn.com/430/Aashiqui-2-Hindi-2013-500x500.jpg");
 background-size:cover;
 }
 
-.e {
+.ekdin{
 background-image: url("https://s1.dmcdn.net/v/CodG-1McbGKgHe181/x1080");
 background-size:cover;
 }
 
-.h {
+.haledil {
 background-image: url("https://i.pinimg.com/originals/36/7b/4d/367b4d03cd1e4d6ff80b7ce8228b3c72.jpg");
 background-size: cover;
 }
 
-.j {
-background-image: url("https://1.bp.blogspot.com/-HhsghoFgFA4/XhbRS2uYtCI/AAAAAAAAAHA/5o3ykadx-zoMq_KVrEANYjTrV3Xa0erVACLcBGAsYHQ/s640/Lehenga%2BLyrics%2B%25E2%2580%2593%2BJass%2BManak.jpg");
+.butterfly {
+background-image: url("https://1.bp.blogspot.com/-EUvgSDLTX6U/X1yJ9WIONjI/AAAAAAAABGg/h3moWPgSfj0cvBbGSpnk4y6X6AYL1A_kACLcBGAsYHQ/s1600/Butterfly-Lyrics-Jass-Manak-No-Competition.jpg");
 background-size: cover;
 }
 
-.t {
+.tumhiho {
 background-image: url("https://lh3.googleusercontent.com/-vqRXyU5HwYc/VTRutSdx5VI/AAAAAAAAACE/BOMQQWq24dQ/Tum-Hi-Ho-lyrics-from-Aashiqui-2.jpg");
 background-size: cover;
 }
 
-.b {
+.burj {
   background-image: url("https://www.bollywoodbubble.com/wp-content/uploads/2020/10/Burj-Khalifa-Akshay-Kumar-Kiara-Advani-2-1280x720.jpg");
   background-size: cover;
 }
 
-.l{
+.laapata{
   background-image: url("https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/lV3dJ5P5bR/size_xxl.webp");
   background-size: cover;
 }
@@ -108,4 +109,5 @@ background-size: cover;
     margin: 40px;
 
   }
+
 }
